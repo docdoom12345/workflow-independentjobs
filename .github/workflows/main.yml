@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Job 1
-        run: cat sample.txt
+        run: echo "inside job1"
 
   job2:
     runs-on: ubuntu-latest
+    needs: job1
     steps:
       - name: Job 2
         run: echo "Job2 executed successfully"
