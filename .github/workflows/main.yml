@@ -18,5 +18,4 @@ jobs:
     steps:
       - name: Job 2
         run: | 
-          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
           az version
