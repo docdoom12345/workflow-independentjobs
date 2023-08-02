@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Job 2
-        run: echo "Job 2 executed successfully"
+        run: echo "Job2 executed successfully"
