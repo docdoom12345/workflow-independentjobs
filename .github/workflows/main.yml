@@ -17,4 +17,6 @@ jobs:
     needs: job1
     steps:
       - name: Job 2
-        run: echo "Job2 executed successfully"
+        run: | 
+          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+          az version
